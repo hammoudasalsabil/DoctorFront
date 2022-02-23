@@ -1,0 +1,55 @@
+.nav{
+    margin-left: 100px;
+}
+
+.bttn{
+    margin-left: 900px;
+}
+.logoutbutton{
+    font-size: 16px;
+    cursor: pointer;
+    transition: 256ms all;
+    //font-weight: bold;
+    color: #576477;
+}
+.logoutbutton:hover{
+    color: white;
+    background-color: #17a2b8;
+}
+.myButton {
+    font-size: 16px;
+    cursor: pointer;
+    transition: 256ms all;
+    //font-weight: bold;
+    color: #576477;
+  }
+  .myButton:hover {
+    color: #17a2b8;
+  }
+.notification2 {
+    font-family: serif;
+    color: rgb(31, 22, 22);
+    text-decoration: none;
+    //padding: 22px 38px;
+    
+    margin-top: 16px;
+  
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+  
+  .notification2:hover {
+    color: rgba(226, 31, 31, 0.589);
+  }
+  
+  .notification2 .badge {
+    position: absolute;
+    top:0px;
+    right: 1px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+  }

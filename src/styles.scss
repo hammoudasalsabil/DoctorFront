@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+.fonttext{
+    font-family: serif;
+}
+.containers{
+    background-color: #0095ff05;
+}
+.footer {
+    background-color: hsl(208, 74%, 32%);
+}
+.navbb{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.thead{
+    background-color: #13364f;
+    color: white;
+}
+.buttonNew{
+    //margin-left: 35px;
+    border-color: #155a8b !important;
+    background-color: white!important;
+    color: #155a8b!important;
+    align-items: self-end;
+    float: right;
+    margin-bottom: 10px;
+}
+.buttonNew:hover{
+//margin-left: 35px;
+    background-color: #155a8b;
+    color: white;
+    align-items: self-end;
+    float: right;
+}
+.marginR{
+    margin-right: 10px;
+  }
+  .marginT{
+    margin-top: 10px;
+  }

@@ -1,0 +1,27 @@
+<div class="containers">
+    <div class="contentcenter" role="main">
+        <form>
+    
+            <div class="containertop">
+                <label for="uname"><b>E-mail</b></label><br>
+                <input type="email" placeholder="Enter email" formControlName="email" name="username" required>
+                <br>
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" formControlName="password" name="password" required>
+                <br>
+                <button type="submit">Login</button><br>
+    
+                <button type="button" [routerLink]="['/Inscription']" class="inscription">Inscription</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-left: 10px;"> Remember me
+                </label>
+            </div>
+    
+            <div class="containerbuttom centre" style="background-color:#f1f1f1">
+                <button type="button" [routerLink]="['']" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+    
+        </form>
+    </div>
+</div>

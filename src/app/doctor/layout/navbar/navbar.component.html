@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbb">
+  <img
+  width="60"
+  alt="Angular Logo"
+  src="/assets/imgs/logt.jpg" 
+/>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="nav">
+      
+      <ul class="bttn">
+    
+          <button class=" btn notification2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false" (click)="clickEventNotification()"
+                  data-bs-toggle="collapse">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                      <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                    </svg>
+                  <span class="badge">{{nbrAlert}}</span>
+          </button>
+                    <!-- bloc menu déroulant -->
+          <ul class="dropdown-menu itemdropdown sidbar btnDrop" aria-labelledby="navbarDropdownMenuLink"
+          style="left: 1100px;"
+              [ngClass]="Notification ? 'hide' : 'show'">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"> <span class="text-center alert">Alert Diagnostic</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>notification1</td>
+                    </tr>
+                  </tbody>
+              </table>
+          </ul>
+      
+    </ul>
+      
+    </div>
+    <button type="button" class="btn fonttext logoutbutton" [routerLink]="['']">
+      <span>Logout</span>
+    </button>
+    
+  </div>
+</nav>
